@@ -1,4 +1,5 @@
 import { Menubar } from './components/menubar'
+import { Cape } from './components/Cape'
 import { GlobalStyle } from './Global'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <GlobalStyle>
       <Menubar/>
+      <Cape/>
     </GlobalStyle>
   )
 }

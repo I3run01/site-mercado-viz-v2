@@ -4,7 +4,7 @@ export const Cape = () => {
 
     return (
         <CapeStyled>
-
+            
         </CapeStyled>
     )
 }
