@@ -1,11 +1,12 @@
-
+import { Menubar } from './components/menubar'
+import { GlobalStyle } from './Global'
 
 function App() {
 
   return (
-    <div>
-
-    </div>
+    <GlobalStyle>
+      <Menubar/>
+    </GlobalStyle>
   )
 }
 
