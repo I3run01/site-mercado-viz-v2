@@ -42,5 +42,11 @@ export const CapeStyled = styled.div`
         font-weight: bold;
         color: ${fontColor};
     }
+
+    #elipseBK {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+    }
     
 `
