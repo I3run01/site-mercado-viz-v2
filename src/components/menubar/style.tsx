@@ -13,7 +13,7 @@ export const MenubarStytle = styled.div`
     right: 0;
     left: 0;
 
-    height: 80px;
+    height: 60px;
 
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ export const MenubarStytle = styled.div`
         text-decoration: none;
         color: ${fontColor};
         font-family: 'Dosis';
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
 
         display: flex;

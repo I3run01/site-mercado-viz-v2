@@ -7,12 +7,13 @@ export const CapeStyled = styled.div`
 
     height: 100vh;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     #productsIMG {
         position: absolute;
-        bottom: 0;
+        bottom: -100px;
         width: 100%;
+        scale: 110%;
     }
 
     #storeSymbol {
