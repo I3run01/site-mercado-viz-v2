@@ -30,5 +30,16 @@ export const CapeStyled = styled.div`
         font-family: 'Dosis';
         color: ${fontColor};
     }
+
+    #paragraph {
+        position: absolute;
+        top: 300px;
+        left: 50px;
+        width: 500px;
+        font-size: 18px;
+        font-family: 'opens sans';
+        font-weight: bold;
+        color: ${fontColor};
+    }
     
 `
