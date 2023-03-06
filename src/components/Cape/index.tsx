@@ -6,10 +6,10 @@ export const Cape = () => {
         <CapeStyled>
             <img src='Cape images/products.png' alt="" id='productsIMG'/>
             <img src="Cape images/Store symbol.png" alt="" id='storeSymbol'/>
-            <div id='title'>
-                <h1>Mercado</h1>
-                <h1>Vizinhança</h1>
-            </div>
+            <h1 id='title'>Mercado <br/> Vizinhança</h1>
+            <p>
+                
+            </p>
         </CapeStyled>
     )
 }

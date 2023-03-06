@@ -24,9 +24,9 @@ export const CapeStyled = styled.div`
     
     #title {
         position: absolute;
-        top: 95px;
-        left: 50px;
-        font-size: 4px;
+        top: 160px;
+        left: 320px;
+        font-size: 36px;
         font-family: 'Dosis';
         color: ${fontColor};
     }
