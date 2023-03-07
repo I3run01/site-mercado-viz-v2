@@ -43,13 +43,16 @@ export const SectorStyle = styled.div<Props>`
 
         width: 92%;
         height: 400px;
-        background-color: red;
         margin-left: 50px;
+        overflow-x: auto;
+        overflow-y: hidden;
 
         .images {
+            width: 300px;
             height: 100%;
-            width: 200px;
-            background-color: yellow;
+
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 `

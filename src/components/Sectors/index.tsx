@@ -19,7 +19,7 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
                     gallary.map((item, index) => {
                         return (
                             <div className='images'>
-                                
+                                <img src={item} alt="" />
                             </div>
                         )
                     })
