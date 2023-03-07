@@ -15,7 +15,9 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
             <h1>{title}</h1>
             <p>{text}</p>
             <div id='gellary'>
-
+                {
+                    
+                }
             </div>
         </SectorStyle>
     )

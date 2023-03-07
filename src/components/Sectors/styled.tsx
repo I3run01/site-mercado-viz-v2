@@ -9,8 +9,11 @@ const fontColor = 'black'
 export const SectorStyle = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
-    background-image: ${props => props.bgImage};
+    background-image: url(${props => props.bgImage});
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -20,7 +23,7 @@ export const SectorStyle = styled.div<Props>`
         color: ${fontColor};
         font-weight: bold;
 
-        margin-left: 100px;
+        margin-left: 50px;
         margin-top: 50px;
     }
 
@@ -29,8 +32,15 @@ export const SectorStyle = styled.div<Props>`
         font-family: 'Dosis';
         color: ${fontColor};
 
-        margin-left: 100px;
+        margin-left: 50px;
         margin-top: 20px;
         max-width: 400px;
     }   
+
+    #gellary {
+        width: 92%;
+        height: 400px;
+        background-color: red;
+        margin-left: 50px;
+    }
 `
