@@ -11,6 +11,7 @@ export const CapeStyled = styled.div`
 
     #productsIMG {
         position: absolute;
+        z-index: +1;
         bottom: -100px;
         width: 100%;
         scale: 110%;
@@ -18,6 +19,7 @@ export const CapeStyled = styled.div`
 
     #storeSymbol {
         position: absolute;
+        z-index: +1;
         top: 95px;
         width: 250px;
         left: 20px;
@@ -25,6 +27,7 @@ export const CapeStyled = styled.div`
     
     #title {
         position: absolute;
+        z-index: +1;
         top: 160px;
         left: 320px;
         font-size: 36px;
@@ -34,6 +37,7 @@ export const CapeStyled = styled.div`
 
     #paragraph {
         position: absolute;
+        z-index: +1;
         top: 300px;
         left: 50px;
         width: 500px;
@@ -44,9 +48,10 @@ export const CapeStyled = styled.div`
     }
 
     #elipseBK {
-        z-index: -1;
+        z-index: 0;
         position: absolute;
         top: 0;
+        opacity: .6;
     }
     
 `
