@@ -10,10 +10,10 @@ export const SectorStyle = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
     background-image: ${props => props.bgImage};
+    background-size: cover;
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
     h1 {
         font-size: 36px;
         font-family: 'Dosis';
@@ -32,6 +32,5 @@ export const SectorStyle = styled.div<Props>`
         margin-left: 100px;
         margin-top: 20px;
         max-width: 400px;
-    }
-    
+    }   
 `
