@@ -24,9 +24,9 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
                         )
                     })
                 }
-                <div id='leftBtn'></div>
-                <div id='rightBtn'></div>
             </div>
+            <div id='leftBtn'></div>
+            <div id='rightBtn'></div>
         </SectorStyle>
     )
 }
