@@ -37,10 +37,19 @@ export const SectorStyle = styled.div<Props>`
         max-width: 400px;
     }   
 
-    #gellary {
+    #gallery {
+        display: flex;
+        justify-content: space-around;    
+
         width: 92%;
         height: 400px;
         background-color: red;
         margin-left: 50px;
+
+        .images {
+            height: 100%;
+            width: 200px;
+            background-color: yellow;
+        }
     }
 `

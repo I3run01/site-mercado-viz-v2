@@ -14,9 +14,15 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
         bgImage={bgImage}>
             <h1>{title}</h1>
             <p>{text}</p>
-            <div id='gellary'>
+            <div id='gallery'>
                 {
-                    
+                    gallary.map((item, index) => {
+                        return (
+                            <div className='images'>
+                                
+                            </div>
+                        )
+                    })
                 }
             </div>
         </SectorStyle>
