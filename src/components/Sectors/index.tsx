@@ -15,15 +15,18 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
             <h1>{title}</h1>
             <p>{text}</p>
             <div id='gallery'>
-                {
-                    gallary.map((item, index) => {
-                        return (
-                            <div className='images'>
-                                <img src={item} alt="" />
-                            </div>
-                        )
-                    })
-                }
+
+                <div id='imagesContainer'>
+                    {
+                        gallary.map((item, index) => {
+                            return (
+                                <div className='images'>
+                                    <img src={item} alt="" />
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
             <div id='leftBtn'></div>
             <div id='rightBtn'></div>

@@ -38,21 +38,28 @@ export const SectorStyle = styled.div<Props>`
     }   
 
     #gallery {
-        display: flex;
-        justify-content: space-around;    
+        position: relative;
 
         width: 92%;
         height: 400px;
         margin-left: 50px;
-        overflow-x: auto;
-        overflow-y: hidden;
+        overflow: hidden;
 
-        .images {
-            width: 300px;
-            height: 100%;
+        #imagesContainer {
+            position: absolute;
+            left: -80px;
 
-            margin-left: 5px;
-            margin-right: 5px;
+            display: flex;
+            justify-content: space-around;   
+
+            width: max-content;
+            height: max-content;
+
+            .images {
+                width: 300px;
+                height: 100%;
+            }
         }
+
     }
 `
