@@ -45,18 +45,21 @@ export const SectorStyle = styled.div<Props>`
         margin-left: 50px;
         overflow: hidden;
 
+        background-color: red;
+
         #imagesContainer {
             position: absolute;
-            left: -80px;
+            left: -20%;
 
             display: flex;
             justify-content: space-around;   
 
             width: max-content;
             height: max-content;
+            margin: 10px;
 
             .images {
-                width: 300px;
+                width: 250px;
                 height: 100%;
             }
         }
