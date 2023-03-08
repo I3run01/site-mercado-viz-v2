@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 type Props = {
     bgImage:string
+    position: number
 }
 
 const fontColor = 'black'
@@ -41,28 +42,62 @@ export const SectorStyle = styled.div<Props>`
         position: relative;
 
         width: 92%;
-        height: 400px;
+        height: 420px;
         margin-left: 50px;
         overflow: hidden;
-
-        background-color: red;
-
+  
         #imagesContainer {
             position: absolute;
-            left: -20%;
-
+            left: ${props => props.position}%;
+            
             display: flex;
             justify-content: space-around;   
-
+            
             width: max-content;
             height: max-content;
             margin: 10px;
-
+            
+            transition: all 0.5s ease-in-out;
+            
             .images {
                 width: 250px;
-                height: 100%;
+                height: auto;
+                
+                margin-right: 10px;
+                margin-left: 10px;
+                
+                img {
+                    height: 400px;
+                    border: 3px solid ${fontColor};
+                }
             }
         }
 
+        #leftBtn, #rightBtn {
+            position: absolute;
+            top: 50%;
+
+            filter: grayscale(100%);
+            transition: all .5s ease-in-out;
+    
+            :hover {
+                cursor: pointer;
+                filter: grayscale(0%);
+            }
+
+            :focus {
+                transform: scale(60%);
+            }
+
+        }
+    
+        #leftBtn {
+            left: 0;
+        }
+    
+        #rightBtn {
+            right: 0;
+        }
+        
     }
 `
