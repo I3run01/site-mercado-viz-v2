@@ -54,8 +54,6 @@ export const MenubarStytle = styled.div`
             cursor: pointer;
             color: ${redThemeColor};
 
-            
-
             ::after {
                 left: 15%;
                 right: 15%;

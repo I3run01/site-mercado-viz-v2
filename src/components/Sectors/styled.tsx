@@ -69,6 +69,8 @@ export const SectorStyle = styled.div<Props>`
                 img {
                     height: 400px;
                     border: 3px solid ${fontColor};
+
+                    box-shadow: 3px 3px 20px black;
                 }
             }
         }
@@ -85,7 +87,7 @@ export const SectorStyle = styled.div<Props>`
                 filter: grayscale(0%);
             }
 
-            :focus {
+            :active {
                 transform: scale(60%);
             }
 
