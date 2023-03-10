@@ -75,6 +75,12 @@ export const SectorStyle = styled.div<Props>`
 
            .swiper-pagination-bullet {
                 background-color: white;
+
+                opacity: 100%;
+           }
+
+           .swiper-pagination-bullet-active {
+            background-color: red;
            }
         }
 
@@ -98,8 +104,7 @@ export const SectorStyle = styled.div<Props>`
                     cursor: pointer;
                     filter: saturate(100%);
 
-                    transform: scale(110%);
-                    
+                    transform: scale(110%);         
                 }
             }
         }
