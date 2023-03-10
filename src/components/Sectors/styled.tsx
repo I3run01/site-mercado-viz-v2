@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 type Props = {
     bgImage:string
-    position: number
 }
 
 const fontColor = 'black'
@@ -36,70 +35,56 @@ export const SectorStyle = styled.div<Props>`
         margin-left: 50px;
         margin-top: 20px;
         max-width: 400px;
-    }   
-
-    #gallery {
+    }  
+    
+    #imagesContainer {
         position: relative;
+        margin: 50px;
 
-        width: 92%;
-        height: 420px;
-        margin-left: 50px;
-        overflow: hidden;
-  
-        #imagesContainer {
+        .swiper-button-prev, .swiper-button-next {
             position: absolute;
-            left: ${props => props.position}%;
-            
-            display: flex;
-            justify-content: space-around;   
-            
-            width: max-content;
-            height: max-content;
-            margin: 10px;
-            
-            transition: all 0.5s ease-in-out;
-            
-            .images {
-                width: 250px;
-                height: auto;
-                
-                margin-right: 10px;
-                margin-left: 10px;
-                
-                img {
-                    height: 400px;
-                    border: 3px solid ${fontColor};
+            color: black;
+            background-color: white;
 
-                    box-shadow: 3px 3px 20px black;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+
+            scale: 80%;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        
+
+        .images {
+            width: 25%;
+
+            display: flex;
+            justify-content: center;
+
+            img {
+                border: 2px solid black;
+                width: 270px;
+
+                -webkit-box-shadow: 2px 5px 24px -6px #000000; 
+                box-shadow: 2px 5px 24px -6px #000000;
+
+                filter: saturate(50%);
+
+                :hover {
+                    cursor: pointer;
+                    filter: saturate(100%);
                 }
             }
         }
 
-        #leftBtn, #rightBtn {
-            position: absolute;
-            top: 50%;
-
-            filter: grayscale(100%);
-            transition: all .5s ease-in-out;
-    
-            :hover {
-                cursor: pointer;
-                filter: grayscale(0%);
-            }
-
-            :active {
-                transform: scale(60%);
-            }
-
-        }
-    
-        #leftBtn {
-            left: 0;
-        }
-    
-        #rightBtn {
-            right: 0;
-        }
-        
     }
+
 `

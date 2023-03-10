@@ -1,5 +1,13 @@
 import { useState } from 'react'
 import { SectorStyle } from './styled'
+import { Navigation, Pagination, Scrollbar, A11y, Zoom} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 type Props = {
     title: string
@@ -10,45 +18,33 @@ type Props = {
 
 export const Sectors = ({title, text, bgImage, gallary}:Props) => {
 
-    const [imagesPosition, setImagesPosition] = useState<number>(0)
-
-    const leftButton = () => {
-        if(imagesPosition >= 0) setImagesPosition(0)
-        else setImagesPosition(imagesPosition + 12)
-
-    }
-
-    const rightButton = () => {
-        if(imagesPosition <= -30) setImagesPosition(-30)
-        else setImagesPosition(imagesPosition - 12)
-
-    }
-
     return (
         <SectorStyle
-        bgImage={bgImage}
-        position={imagesPosition}>
+        bgImage={bgImage}>
             <h1>{title}</h1>
             <p>{text}</p>
-            <div id='gallery'>
-                <div id='imagesContainer'>
-                    {
-                        gallary.map((item, index) => {
-                            return (
-                                <div className='images'>
-                                    <img src={item} alt="" />
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-                <div id='leftBtn' onClick={leftButton}>
-                    <img src="Button Icons/left.svg" alt="" />
-                </div>
-                <div id='rightBtn' onClick={rightButton}>
-                    <img src="Button Icons/right.svg" alt="" />
-                </div>
-            </div>
+
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
+                spaceBetween={50}
+                slidesPerView={4}
+                navigation
+                pagination={{ clickable: true }}
+                //scrollbar={{ draggable: false }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                
+
+                id='imagesContainer'
+            >
+                {gallary.map((item, index) => {
+                    return (
+                        <SwiperSlide className='images'>
+                            <img src={item} alt="" />
+                        </SwiperSlide>
+                    )
+                })}
+            </Swiper>
         </SectorStyle>
     )
 }
