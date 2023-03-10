@@ -6,8 +6,5 @@ export const GlobalStyle = styled.div`
     left: 0;
     right: 0;
     top: 0;
-
-    z-index: -10;
-
     background-color: #E4E0D6;
 `
