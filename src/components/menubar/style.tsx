@@ -13,11 +13,14 @@ export const MenubarStytle = styled.div`
     right: 0;
     left: 0;
 
-    height: 60px;
+    min-height: 60px;
+    padding: 4px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 
     box-sizing: border-box;
     background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
@@ -28,7 +31,8 @@ export const MenubarStytle = styled.div`
     a {
         position: relative;
 
-        height: 100%;
+        min-width: 80px;
+        padding: 2px;
 
         text-decoration: none;
         color: ${fontColor};
@@ -38,13 +42,15 @@ export const MenubarStytle = styled.div`
 
         display: flex;
         align-items: center;
+        justify-content: center;
+
 
         ::after {
             content: "";
             position: absolute;
             left: 50%;
             right: 50%;
-            bottom: 12px;
+            bottom: 0px;
             border: 2px solid ${redThemeColor};
             transition: .5s;
             opacity: 0;
