@@ -39,7 +39,9 @@ export const SectorStyle = styled.div<Props>`
     
     #imagesContainer {
         position: relative;
-        margin: 50px;
+        margin: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
 
         .swiper-button-prev, .swiper-button-next {
             position: absolute;
@@ -53,6 +55,10 @@ export const SectorStyle = styled.div<Props>`
             height: 40px;
 
             scale: 80%;
+
+            :hover {
+                background-color: red;
+            }
         }
 
         .swiper-button-prev {
@@ -61,7 +67,16 @@ export const SectorStyle = styled.div<Props>`
         .swiper-button-next {
             right: 0;
         }
-        
+
+        .swiper-pagination {
+           position: absolute;
+
+           scale: 120%;
+
+           .swiper-pagination-bullet {
+                background-color: white;
+           }
+        }
 
         .images {
             width: 25%;
@@ -77,10 +92,14 @@ export const SectorStyle = styled.div<Props>`
                 box-shadow: 2px 5px 24px -6px #000000;
 
                 filter: saturate(50%);
+                transition: all 0.5s ease-in-out;
 
                 :hover {
                     cursor: pointer;
                     filter: saturate(100%);
+
+                    transform: scale(110%);
+                    
                 }
             }
         }
