@@ -20,7 +20,7 @@ export const CapeStyled = styled.div`
     #storeSymbol {
         position: absolute;
         z-index: +1;
-        top: 95px;
+        top: 60px;
         width: 250px;
         left: 20px;
     }
@@ -28,8 +28,8 @@ export const CapeStyled = styled.div`
     #title {
         position: absolute;
         z-index: +1;
-        top: 160px;
-        left: 320px;
+        top: 120px;
+        left: 340px;
         font-size: 36px;
         font-family: 'Dosis';
         color: ${fontColor};
@@ -38,11 +38,11 @@ export const CapeStyled = styled.div`
     #paragraph {
         position: absolute;
         z-index: +1;
-        top: 300px;
+        top: 280px;
         left: 50px;
         width: 500px;
-        font-size: 18px;
-        font-family: 'opens sans';
+        font-size: 16px;
+        font-family: 'Dosis';
         font-weight: bold;
         color: ${fontColor};
     }
