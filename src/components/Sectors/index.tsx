@@ -31,17 +31,17 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
     const updateSliders = () => {
         if(window.innerWidth < 600) setSlidesPerView(1)
         else if(window.innerWidth >= 600 && window.innerWidth < 930) setSlidesPerView(2)
-        else if(window.innerWidth >= 930 && window.innerWidth < 1250) setSlidesPerView(3)
+        else if(window.innerWidth >= 930 && window.innerWidth < 120) setSlidesPerView(3)
         else setSlidesPerView(4)
     }
 
 
     return (
         <SectorStyle
-        bgImage={bgImage}>
+        bgImage={bgImage}
+        id={title}>
             <h1>{title}</h1>
             <p>{text}</p>
-
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
                 spaceBetween={50}
