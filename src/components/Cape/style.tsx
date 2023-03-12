@@ -11,20 +11,18 @@ export const CapeStyled = styled.div`
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     padding-top: 80px;
 
     #logo {
         display: flex;
-        flex-direction: row;
-        justify-content: start;
         align-items: center;
+        flex-direction: column;
 
         #storeSymbol {
             z-index: +1;
-            width: 250px;
-            scale: 90%;
+            width: 220px;
         }
         
         #title {
@@ -33,18 +31,20 @@ export const CapeStyled = styled.div`
             font-family: 'Dosis';
             color: ${fontColor};
             margin-left: 40px;
+            text-align: center;
         }
     }
     
     #paragraph {
         z-index: +1;
-        width: 500px;
+        max-width: 500px;
         font-size: 16px;
         font-family: 'Dosis';
         font-weight: bold;
         color: ${fontColor};
+        text-align: center;
 
-        padding-left: 40px;
+        padding-left: 30px;
     }
 
     #productsIMG {
@@ -59,5 +59,23 @@ export const CapeStyled = styled.div`
         top: 0;
         opacity: .6;
     }
+
+    @media screen and (min-width: 600px) {
+        align-items: flex-start;
+
+       #logo {
+            flex-direction: row;
+            justify-content: start;
+
+            #title {
+                 text-align: start;
+            }
+         }
+       }
+
+       #paragraph {
+            text-align: start;
+       }
+
     
     `
