@@ -3,7 +3,7 @@ import { CapeStyled } from './style'
 export const Cape = () => {
 
     return (
-        <CapeStyled>
+        <CapeStyled id='inicio'>
             <div id='logo'>
                 <img src="Cape images/Store symbol.png" alt="" id='storeSymbol'/>
                 <h1 id='title'>Mercado <br/> Vizinhança</h1>
