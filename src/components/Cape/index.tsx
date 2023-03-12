@@ -12,7 +12,7 @@ export const Cape = () => {
             <p id='paragraph'>
                 Bem-vindo ao Mercado Vizinhança! Oferecemos uma variedade de produtos de alta qualidade, incluindo carne fresca, pão e frutas e verduras locais. Além disso, temos itens de higiene pessoal e produtos de limpeza. Visite-nos ou navegue pelo nosso site para saber mais!
             </p>
-            
+
             <img src='Cape images/products.png' alt="" id='productsIMG'/>
         </CapeStyled>
     )

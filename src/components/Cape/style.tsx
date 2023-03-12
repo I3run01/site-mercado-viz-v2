@@ -12,6 +12,7 @@ export const CapeStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     padding-top: 80px;
 
@@ -42,8 +43,8 @@ export const CapeStyled = styled.div`
         font-family: 'Dosis';
         font-weight: bold;
         color: ${fontColor};
-        text-align: center;
 
+        margin-right: 20px;
         padding-left: 30px;
     }
 
@@ -72,10 +73,4 @@ export const CapeStyled = styled.div`
             }
          }
        }
-
-       #paragraph {
-            text-align: start;
-       }
-
-    
     `
