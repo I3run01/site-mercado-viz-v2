@@ -21,11 +21,20 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
     const [slidesPerView, setSlidesPerView] = useState<number>(4)
 
     useEffect(() => {
+
+        setInterval(()=>{
+            updateSliders()
+        },100)
+
+    }, [])
+
+    const updateSliders = () => {
         if(window.innerWidth < 400) setSlidesPerView(1)
         else if(window.innerWidth >= 400 && window.innerWidth < 600) setSlidesPerView(2)  
         else if(window.innerWidth >= 600 && window.innerWidth < 800) setSlidesPerView(3)
         else setSlidesPerView(4)
-    })
+    }
+
 
     return (
         <SectorStyle
