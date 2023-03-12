@@ -1,7 +1,8 @@
 import { Menubar } from './components/menubar'
-import { Sectors } from './components/Sectors'
-import { Cape } from './components/Cape'
 import { GlobalStyle } from './Global'
+import { Cape } from './components/Cape'
+import { Sectors } from './components/Sectors'
+import { Footer } from './components/footer'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           ]
         }
       />
+      <Footer></Footer>
     </GlobalStyle>
   )
 }

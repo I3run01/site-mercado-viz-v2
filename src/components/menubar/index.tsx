@@ -9,7 +9,6 @@ export const Menubar = () => {
                 <a>Panificadora</a>
                 <Link to="Açougue" spy={true} smooth={true} offset={-20} duration={500}>Açougue</Link>
                 <a>Mercado</a>
-                <a>Início</a>
                 <a>Hortifruti</a>
         </MenubarStytle>
     )
