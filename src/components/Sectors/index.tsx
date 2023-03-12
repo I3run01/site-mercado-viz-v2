@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SectorStyle } from './styled'
 import { Navigation, Pagination, Scrollbar, A11y, Zoom} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -18,6 +18,15 @@ type Props = {
 
 export const Sectors = ({title, text, bgImage, gallary}:Props) => {
 
+    const [slidesPerView, setSlidesPerView] = useState<number>(4)
+
+    useEffect(() => {
+        if(window.innerWidth < 400) setSlidesPerView(1)
+        else if(window.innerWidth >= 400 && window.innerWidth < 600) setSlidesPerView(2)  
+        else if(window.innerWidth >= 600 && window.innerWidth < 800) setSlidesPerView(3)
+        else setSlidesPerView(4)
+    })
+
     return (
         <SectorStyle
         bgImage={bgImage}>
@@ -27,7 +36,7 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y, Zoom]}
                 spaceBetween={50}
-                slidesPerView={4}
+                slidesPerView={slidesPerView}
                 navigation
                 pagination={{ clickable: true }}
                 //scrollbar={{ draggable: false }}
