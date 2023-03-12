@@ -1,8 +1,9 @@
-import { Menubar } from './components/menubar'
-import { GlobalStyle } from './Global'
-import { Cape } from './components/Cape'
-import { Sectors } from './components/Sectors'
-import { Footer } from './components/footer'
+import {Menubar} from './components/menubar'
+import {GlobalStyle} from './Global'
+import {Cape} from './components/Cape'
+import {Sectors} from './components/Sectors'
+import {Medias_btn} from './components/Medias_btn'
+import {Footer} from './components/footer'
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
           ]
         }
       />
-      <Footer></Footer>
+      <Medias_btn/>
+      <Footer/>
     </GlobalStyle>
   )
 }
