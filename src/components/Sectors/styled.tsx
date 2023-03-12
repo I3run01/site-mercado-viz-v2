@@ -100,11 +100,13 @@ export const SectorStyle = styled.div<Props>`
                 filter: saturate(50%);
                 transition: all 0.5s ease-in-out;
 
+                margin: 10px;
+
                 :hover {
                     cursor: pointer;
                     filter: saturate(100%);
 
-                    transform: scale(110%);         
+                    transform: scale(105%);         
                 }
             }
         }

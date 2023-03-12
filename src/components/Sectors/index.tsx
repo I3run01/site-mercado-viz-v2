@@ -29,9 +29,9 @@ export const Sectors = ({title, text, bgImage, gallary}:Props) => {
     }, [])
 
     const updateSliders = () => {
-        if(window.innerWidth < 400) setSlidesPerView(1)
-        else if(window.innerWidth >= 400 && window.innerWidth < 600) setSlidesPerView(2)  
-        else if(window.innerWidth >= 600 && window.innerWidth < 800) setSlidesPerView(3)
+        if(window.innerWidth < 600) setSlidesPerView(1)
+        else if(window.innerWidth >= 600 && window.innerWidth < 930) setSlidesPerView(2)
+        else if(window.innerWidth >= 930 && window.innerWidth < 1250) setSlidesPerView(3)
         else setSlidesPerView(4)
     }
 
