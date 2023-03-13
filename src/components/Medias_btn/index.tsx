@@ -8,9 +8,9 @@ export const Medias_btn = () => {
                 <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
                 <div className='txt'> Contato <br />Redes sociais</div>
             </div>
-            <div id='mainBTN'>
+            <div className='mediasBTN'>
                 <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
-                <div className='txt'> Contato <br />Redes sociais</div>
+                <div className='txt'> Telefone fixo <br />(41)3030-6675</div>
             </div>
         </MediasBTNstyle>
     )
