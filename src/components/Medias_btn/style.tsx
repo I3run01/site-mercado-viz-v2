@@ -6,7 +6,7 @@ export const MediasBTNstyle = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
     position: fixed;
-    bottom: 80px;
+    bottom: 20px;
     right: 20px;
     z-index: +10;
 
@@ -30,6 +30,15 @@ export const MediasBTNstyle = styled.div`
 
         :hover {
             cursor: pointer;
+            border-color: red;
+
+            .txt {
+                color: red;
+            }
+
+            .icons {
+                filter: grayscale(0%);
+            }
         }
     }
 

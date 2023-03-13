@@ -8,7 +8,10 @@ export const Medias_btn = () => {
                 <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
                 <div className='txt'> Contato <br />Redes sociais</div>
             </div>
-
+            <div id='mainBTN'>
+                <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
+                <div className='txt'> Contato <br />Redes sociais</div>
+            </div>
         </MediasBTNstyle>
     )
 }
