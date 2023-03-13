@@ -10,8 +10,6 @@ export const MediasBTNstyle = styled.div`
     right: 20px;
     z-index: +10;
 
-    background-color: blue;
-
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -55,16 +53,24 @@ export const MediasBTNstyle = styled.div`
         border-radius: 20px;
         border: 1px solid ${fontColorLight};
 
+        z-index: +5;
+
+        opacity: 0;
+
         display: flex;
         justify-content: flex-start;
 
-        margin: 10px auto 10px auto;
+        margin-bottom: -30px;
+
+        scale: 0%;
 
         box-sizing: border-box;
         background: linear-gradient(179.21deg, rgba(255, 253, 253, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
         box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(40px);
         /* Note: backdrop-filter has minimal browser support */
+
+        transition: all 0.5s ease-in-out;
 
         :hover {
             cursor: pointer;
@@ -79,7 +85,6 @@ export const MediasBTNstyle = styled.div`
             }
         }
     }
-    
 
     .icons {
         margin: 6px;
@@ -95,5 +100,16 @@ export const MediasBTNstyle = styled.div`
         font-size: 12px;
         font-weight: bold;
     }
+
+    :hover > .mediasBTN {
+
+        opacity: 100%;
+
+        margin-bottom: 10px;
+
+        scale: 100%;
+    } 
+
+
 
 `
