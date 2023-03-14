@@ -13,12 +13,12 @@ export const Medias_btn = () => {
                 <div className='txt'> Telefone fixo <br />(41)3030-6675</div>
             </div>
             <div className='mediasBTN'>
-                <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
+                <img src="Medias_btn/WhatsApp.svg" alt="" className='icons' />
                 <div className='txt'> WhatsApp <br />(41)99877-0153</div>
             </div>
             <div className='mediasBTN'>
-                <img src="Medias_btn/phoneIcon.svg" alt="" className='icons' />
-                <div className='txt'> WhatsApp <br />(41)99877-0153</div>
+                <img src="Medias_btn/googleIcon.svg" alt="" className='icons' />
+                <div className='txt'>Avaliação<br />Google</div>
             </div>
         </MediasBTNstyle>
     )
