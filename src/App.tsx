@@ -26,6 +26,21 @@ function App() {
           ]
         }
       />
+      <Sectors
+        title='Mercado'
+        bgImage='Mercado/bgMercado.png'
+        text='Carne fresca e selecionada diariamente, variedade de cortes e preços competitivos. Visite o açougue do Mercado Vizinhança e surpreenda-se com a qualidade e sabor da nossa carne.'
+        gallary={
+          [
+            'Mercado/gallery/img1.jpg',
+            'Mercado/gallery/img2.jpg',
+            'Mercado/gallery/img3.jpg',
+            'Mercado/gallery/img4.jpg',
+            'Mercado/gallery/img5.jpg',
+            'Mercado/gallery/img6.jpg',
+          ]
+        }
+      />
       <Medias_btn/>
       <Footer/>
     </GlobalStyle>
