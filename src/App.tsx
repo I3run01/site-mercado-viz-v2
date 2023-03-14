@@ -29,7 +29,7 @@ function App() {
       <Sectors
         title='Mercado'
         bgImage='Mercado/bgMercado.png'
-        text='Carne fresca e selecionada diariamente, variedade de cortes e preços competitivos. Visite o açougue do Mercado Vizinhança e surpreenda-se com a qualidade e sabor da nossa carne.'
+        text='Certamente! O Mercado Vizinhança também oferece uma seleção cuidadosamente selecionada de produtos industrializados, como alimentos enlatados, massas, cereais, óleos e molhos, entre outros. Embora valorizemos nossos produtos frescos e artesanais, sabemos que esses itens industrializados são convenientes e essenciais para muitos de nossos clientes.'
         gallary={
           [
             'Mercado/gallery/img1.jpg',
